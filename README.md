@@ -43,7 +43,7 @@ async function allSystemsGo() {
                     name: 'testcron',
                     time: '*/10 * * * * *',
                     timezone: 'Europe/London',
-                    request: {
+                    request: { // method: (hapi.js server method) or handler:
                         method: 'GET',
                         url: '/test-url'
                     },
